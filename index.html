@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="settings">
+        <h2>Questions Settings :</h2>
+        <div class="difficulty">
+          <label>Difficulty</label>
+          <select id="difficulty-type">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+        </div>
+        <div class="category">
+          <label for="cat">Category : </label>
+          <select name="" id="cat">
+            <option value="9">General Knowledge</option>
+            <option value="27">Animals</option>
+            <option value="15">Video Games</option>
+            <option value="23">History</option>
+            <option value="21">Sports</option>
+            <option value="18">Science: Computers</option>
+          </select>
+        </div>
+        <div class="questions-count">
+          <label for="q-count">Questions Count : </label>
+          <select name="" id="q-count">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+      </div>
+      <div id="question-container" class="hide">
+        <div id="question" class="question">question 1</div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">answer 1</button>
+          <button class="btn">answer 2</button>
+          <button class="btn">answer 3</button>
+          <button class="btn">answer 4</button>
+        </div>
+      </div>
+      <div class="controls">
+        <button id="start-btn" class="btn start-btn">start</button>
+        <button id="next-btn" class="btn next-btn hide">next</button>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
